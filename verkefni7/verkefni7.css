@@ -1,0 +1,160 @@
+.header1{
+    text-align: center;
+}
+
+main{
+    text-align: center;
+}
+
+@font-face{
+    font-family: edm;
+    src: url(Font/Quantum.otf)
+}
+
+body{
+    max-width: 95%;
+    margin: auto;
+    background: linear-gradient(black, gray, blue);
+}
+
+.logo{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 10%;
+    height: auto;
+}
+
+img{
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+
+.imagesize {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;    
+    padding: 0 10px;
+}
+
+.mapsize{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;    
+    padding: 0 10px;
+    justify-content: center;
+}
+
+nav{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5px;
+}
+
+a{
+    color: red;
+}
+
+.efst{
+    color: yellow;
+}
+
+a:visited{
+    color: orangered;
+}
+
+a:hover{
+    color: green;
+}
+
+.arti{
+    grid-area: arti;
+}
+
+.sect{
+    grid-area: sect;
+}
+
+.asid{
+    grid-area: asid;
+}
+
+.mainer{
+    grid-area: mainer;
+}
+
+.arti2{
+    grid-area: arti2;
+}
+
+.sect2{
+    grid-area: sect2;
+}
+
+.mainer2{
+    grid-area: mainer2;
+}
+
+.asid2{
+    grid-area: asid2;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: red;
+    margin: auto;
+    padding: 2%;
+}
+
+img{
+    justify-items: center;
+}
+
+h2, h1{
+    text-align: center;
+    font-family: edm;
+}
+
+iframe{
+    align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    nav{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 5px;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "sect mainer arti"
+        "sect2 mainer2 arti2 asid2 asid";
+        color: red;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 5px;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: red;
+    }
+}
